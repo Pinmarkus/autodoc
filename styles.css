@@ -805,6 +805,7 @@ header {
         transition: 0.3s;
         padding: 20px 0;
         position: relative;
+        z-index: 1000;
     }
 
     .nav-menu.active {
