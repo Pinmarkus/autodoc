@@ -860,4 +860,9 @@ header {
     display: flex;
     margin-top: 5%;    
   }
+  button {
+    position: absolute;
+    left: 10px; /* distanța față de marginea stângă */
+    top: 10px;  /* poziția pe verticală */
+  }
   
