@@ -837,7 +837,25 @@ header {
 }
 
 
-
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        background-color: rgba(139, 0, 0, 0.9);
+        position: absolute;
+        top: 60px; 
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+    .nav-links.show {
+        display: flex; 
+    }
+}
 .container {
     display: flex;
     margin-top: 5%;    
