@@ -795,8 +795,6 @@ header {
     }
 
     .nav-menu {
-        margin-left: 50%;
-        margin-top: 50%;
         top: 70px;
         gap: 0;
         flex-direction: column;
@@ -806,8 +804,6 @@ header {
         transition: 0.3s;
         padding: 20px 0;
         position: relative;
-        left: 50%;
-        top: 300px;
     }
 
     .nav-menu.active {
