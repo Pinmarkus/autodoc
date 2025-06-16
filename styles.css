@@ -858,6 +858,6 @@ header {
 }
 .container {
     display: flex;
-    margin-top: 25%;      /* aliniere verticală, dacă e cazul */
+    margin-top: 5%;    
   }
   
