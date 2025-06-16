@@ -858,7 +858,6 @@ header {
 }
 .container {
     display: flex;
-    justify-content: flex-start; /* aliniere la stânga */
-    align-items: center;         /* aliniere verticală, dacă e cazul */
+    margin-top: 25%;      /* aliniere verticală, dacă e cazul */
   }
   
