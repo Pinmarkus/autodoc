@@ -807,7 +807,7 @@ header {
         padding: 20px 0;
         position: relative;
         left: 50%;
-        top: 50%;
+        top: 300px;
     }
 
     .nav-menu.active {
