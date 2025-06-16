@@ -862,7 +862,7 @@ header {
   }
   button {
     position: absolute;
-    left: 10px; /* distanța față de marginea stângă */
-    top: 17.5px;  /* poziția pe verticală */
+    left: 10px; 
+    top: 25px; 
   }
   
