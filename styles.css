@@ -777,70 +777,47 @@ header {
 }
 
 @media (max-width: 768px) {
-    /* Hamburger-ul mereu vizibil, fixat sus centru */
     .hamburger {
-        position: fixed;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 10001;
-        background: transparent;
-        border: none;
-        font-size: 2rem;
-        color: white;
-        cursor: pointer;
+        display: block;
     }
 
-    /* Overlay-ul full screen, transparent negru */
-    .nav-links {
-        display: none;
-        position: fixed;
-        top: 0; left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(0,0,0,0.7);
-        z-index: 10000;
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
 
-        /* Pentru a pune conținutul centrat vertical și orizontal */
-        display: flex;
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        margin-left: 50%;
+        margin-top: 50%;
+        top: 70px;
+        gap: 0;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 60px; /* ca să nu fie sub hamburger */
-        box-sizing: border-box;
-    }
-
-    /* Când meniul e deschis */
-    .nav-links.show {
-        display: flex;
-    }
-
-    /* Lista cu linkuri ca o coloană cu fundal alb, puțin padding și colțuri rotunjite */
-    .nav-links ul {
-        background: white;
-        padding: 2rem 3rem;
-        border-radius: 15px;
-        min-width: 250px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.3);
-        list-style: none;
-        margin: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 200%;
         text-align: center;
+        transition: 0.3s;
+        padding: 20px 0;
+        position: relative;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .nav-links li {
-        margin: 1rem 0;
-    }
-
-    .nav-links a {
-        color: #333;
-        font-weight: 600;
-        font-size: 1.3rem;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-
-    .nav-links a:hover {
-        color: #8b0000;
+        margin: 0;
     }
 }
 
