@@ -814,7 +814,7 @@ header {
         flex-direction: column;
         gap: 2rem;
         position: fixed;      
-        top: 50px; left: 25%;
+        top: 150px; left: 25%;
     }
 
     .nav-links li {
