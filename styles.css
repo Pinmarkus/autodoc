@@ -794,7 +794,6 @@ header {
     }
 
     .nav-menu {
-        position: center;
         margin-left: 50%;
         margin-top: 50%;
         top: 70px;
@@ -805,6 +804,7 @@ header {
         text-align: center;
         transition: 0.3s;
         padding: 20px 0;
+        position: relative;
     }
 
     .nav-menu.active {
