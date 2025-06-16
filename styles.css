@@ -801,7 +801,7 @@ header {
         gap: 0;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.9);
-        width: 100%;
+        width: 200%;
         text-align: center;
         transition: 0.3s;
         padding: 20px 0;
