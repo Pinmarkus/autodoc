@@ -380,7 +380,6 @@ function toggleNavbar() {
     navLinks.classList.toggle('show');
 }
 
-// Dacă vrei, poți adăuga și un cod să închidă meniul când dai click pe un link
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         if(window.innerWidth <= 768) {
