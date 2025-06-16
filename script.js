@@ -374,3 +374,17 @@ document.addEventListener('click', function(event) {
         dropdown.classList.remove('show');
     }
 }); 
+
+function toggleNavbar() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+}
+
+// Dacă vrei, poți adăuga și un cod să închidă meniul când dai click pe un link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        if(window.innerWidth <= 768) {
+            document.querySelector('.nav-links').classList.remove('show');
+        }
+    });
+});
