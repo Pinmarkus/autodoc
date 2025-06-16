@@ -866,3 +866,42 @@ header {
     top: 25px; 
   }
   
+  .side-nav {
+    position: fixed;
+    top: 0;
+    left: -250px; /* ascuns în afara ecranului */
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    z-index: 1000;
+  }
+  
+  .side-nav.open {
+    left: 0; /* devine vizibil, pe stânga */
+  }
+  
+  .side-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .side-nav li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  #menu-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1100;
+    background: none;
+    border: none;
+    color: #333;
+  }
