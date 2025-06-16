@@ -794,7 +794,7 @@ header {
     }
 
     .nav-menu {
-        position: fixed;
+        position: center;
         left: -100%;
         top: 70px;
         gap: 0;
