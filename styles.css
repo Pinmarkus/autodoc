@@ -866,7 +866,7 @@ header {
     top: 25px; 
   }
   
-  .nav-menu {
+  .side-nav {
     position: fixed;
     top: 0;
     left: -250px; /* ascuns în afara ecranului */
@@ -878,16 +878,16 @@ header {
     z-index: 1000;
   }
   
-  .nav-menu.open {
+  .side-nav.open {
     left: 0; /* devine vizibil, pe stânga */
   }
   
-  .nav-menu ul {
+  .side-nav ul {
     list-style: none;
     padding: 0;
   }
   
-  .nav-menu li a {
+  .side-nav li a {
     display: block;
     padding: 15px 20px;
     color: white;
