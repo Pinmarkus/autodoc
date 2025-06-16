@@ -395,3 +395,4 @@ const sideNav = document.getElementById('side-nav');
 menuBtn.addEventListener('click', () => {
   sideNav.classList.toggle('open');
 });
+ 
